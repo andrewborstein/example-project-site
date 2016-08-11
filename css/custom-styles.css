@@ -125,12 +125,19 @@ blockquote {
   font-weight: 700;
   padding: 15px 30px;
   text-transform: uppercase;
+  transition: all 0.4s;
   white-space: nowrap;
+}
+.btn:hover {
+  color: #333;
 }
 
 .btn.primary {
   background: #f05f40;
   color: #FFF;
+}
+.btn.primary:hover {
+  color: #ee4b28;
 }
 
 
@@ -266,7 +273,7 @@ header a:hover {
   opacity: 0;
   position: absolute;
   text-align: center;
-  transition: all .35s;
+  transition: all 0.4s;
   width: 100%;
 }
 
