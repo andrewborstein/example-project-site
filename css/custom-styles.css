@@ -11,19 +11,36 @@ h5,
 h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 500;
-  line-height: 1.1;
+  line-height: 1.5;
+}
+@media (min-width: 769px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 { line-height: 1.1; }
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 28px;
+}
+@media (min-width: 769px) {
+  h1 { font-size: 36px; line-height: 1.1;}
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 24px;
+}
+@media (min-width: 769px) {
+  h2 { font-size: 30px; }
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 20px;
+}
+@media (min-width: 769px) {
+  h3 { font-size: 24px; }
 }
 
 a {
@@ -59,7 +76,10 @@ aside {
 }
 
 section {
-  padding: 100px 0
+  padding: 50px 0
+}
+@media (min-width: 769px) {
+  section { padding: 100px 0; }
 }
 
 blockquote {
@@ -226,12 +246,15 @@ header a:hover {
 }
 
 .landing-content-outer {
-  padding: 0 50px;
+  padding: 100px 20px 0;
   position: absolute;
   text-align: center;
   top: 50%;
   transform: translateY(-50%);
   width: 100%;
+}
+@media (min-width: 769px) {
+  .landing-content-outer { padding-top: 100px; }
 }
 
 .landing-content-inner {
@@ -250,10 +273,17 @@ header a:hover {
 
 .landing-container p {
   color: rgba(255,255,255,.7);
-  font-size: 18px;
+  font-size: 16px;
   margin: 0 auto 50px;
-  max-width: 80%;
+  max-width: 90%;
 }
+@media (min-width: 769px) {
+  .landing-container p {
+    font-size: 18px;
+    max-width: 80%;
+  }
+}
+
 
 
 /* ABOUT */
@@ -267,6 +297,10 @@ header a:hover {
 .portfolio-box {
   display: block;
   position: relative;
+}
+
+.portfolio-box img {
+  width: 100%;
 }
 
 .portfolio-box-caption {
