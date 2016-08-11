@@ -28,6 +28,7 @@ h3 {
 
 a {
   text-decoration: none;
+  transition: all 0.4s;
 }
 
 hr {
@@ -73,6 +74,10 @@ blockquote {
   color: #f05f40;
 }
 
+a.text-primary:hover {
+  color: #ee4b28;
+}
+
 .text-light {
   color: #FFF;
 }
@@ -116,7 +121,7 @@ blockquote {
 /* BUTTONs */
 .btn {
   cursor: pointer;
-  background: #FFF;
+  background-color: #FFF;
   border-radius: 300px;
   border: 0;
   color: #222;
@@ -129,15 +134,15 @@ blockquote {
   white-space: nowrap;
 }
 .btn:hover {
-  color: #333;
+  background-color: #eee;
 }
 
 .btn.primary {
-  background: #f05f40;
+  background-color: #f05f40;
   color: #FFF;
 }
 .btn.primary:hover {
-  color: #ee4b28;
+  background-color: #ee4b28;
 }
 
 
