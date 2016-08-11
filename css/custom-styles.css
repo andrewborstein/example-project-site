@@ -1,0 +1,298 @@
+/* GLOBAL */
+body {
+  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
+hr {
+  max-width: 50px;
+  border-color: #f05f40;
+  border-width: 3px;
+  margin: 30px auto;
+}
+
+hr {
+  max-width: 50px;
+  border-color: #f05f40;
+  border-width: 3px;
+  margin: 30px auto;
+}
+
+hr.light {
+  border-color: #FFF;
+}
+
+p {
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+aside {
+  padding: 50px 0;
+}
+
+section {
+  padding: 100px 0
+}
+
+blockquote {
+  border-left: 5px solid #eee;
+  font-size: 17.5px;
+  margin: 0 0 20px;
+  padding: 10px 20px;
+}
+
+/* HELPERS */
+.text-primary {
+  color: #f05f40;
+}
+
+.text-light {
+  color: #FFF;
+}
+
+.text-center {
+  text-align: center
+}
+
+.text-faded {
+    color: rgba(255,255,255,.7);
+}
+
+.text-muted {
+    color: #777;
+}
+
+.bg-primary {
+  background-color: #f05f40;
+}
+
+.bg-dark {
+  background-color: #222;
+  color: #FFF;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.call-to-action h2 {
+  margin: 0 auto 20px;
+}
+
+.no-padding {
+  padding: 0
+}
+
+
+/* BUTTONs */
+.btn {
+  cursor: pointer;
+  background: #FFF;
+  border-radius: 300px;
+  border: 0;
+  color: #222;
+  display: inline-block;
+  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+  font-weight: 700;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.btn.primary {
+  background: #f05f40;
+  color: #FFF;
+}
+
+
+
+/* HEADER */
+
+header {
+  background-color: #FFF;
+  border-bottom: 1px solid #CCC;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  overflow: auto; /* Contain floated elements */
+  position: fixed;
+  text-transform: uppercase;
+  top: 0;
+  transition: all 0.4s;
+  width: 100%;
+  z-index: 1
+}
+
+header a {
+  display: inline-block;
+}
+
+header a:hover {
+  color: red
+}
+
+.site-name,
+.nav-menu {
+  margin: 0;
+  display: block;
+  text-align: center;
+}
+
+.site-name {
+  color: #f05f40;
+  font-size: 18px;
+  line-height: 50px;
+  padding: 0 10px;
+}
+@media (min-width: 769px) {
+  .site-name {
+    float: left;
+  }
+}
+
+.nav-menu {
+  margin: 0;
+  padding-left: 0;
+}
+@media (min-width: 769px) {
+  .nav-menu {
+    float: right;
+  }
+}
+
+.nav-menu li {
+  display: inline-block
+}
+
+.nav-menu a {
+  color: #222;
+  padding: 0 10px 16px;
+}
+@media (min-width: 769px) {
+  .nav-menu a { padding: 16px 10px; }
+}
+
+
+
+/* LANDING */
+
+.landing-container {
+  position: relative;
+  height: 100vh;
+  background-image: url(../img/header.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.landing-content-outer {
+  padding: 0 50px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.landing-content-inner {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1000px;
+}
+
+.landing-container h1 {
+  font-weight: 700;
+  margin-bottom: 0;
+  margin-top: 0;
+  text-transform: uppercase;
+  color: white;
+}
+
+.landing-container p {
+  color: rgba(255,255,255,.7);
+  font-size: 18px;
+  margin: 0 auto 50px;
+  max-width: 80%;
+}
+
+
+/* ABOUT */
+
+.about {
+  color: #FFF;
+}
+
+/* GALLERY */
+
+.portfolio-box {
+  display: block;
+  position: relative;
+}
+
+.portfolio-box-caption {
+  background: rgba(240,95,64,.9);
+  bottom: 0;
+  color: #fff;
+  display: block;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  transition: all .35s;
+  width: 100%;
+}
+
+.portfolio-box-caption-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+.portfolio-box:hover .portfolio-box-caption {
+    opacity: 1;
+}
+.project-category ,
+.project-name {
+  padding: 0 15px;
+  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+
+.project-category {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.project-name {
+  font-size: 22px;
+}
+
