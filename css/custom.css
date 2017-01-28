@@ -193,12 +193,13 @@ header a {
   color: #444;
   display: block;
   letter-spacing: 5px;
+  padding-bottom: 0;
   text-align: center;
 }
 @media (min-width: 769px) {
   .site-name {
-    display: inline-block;
     float: left;
+    padding-bottom: 20px;
   }
 }
 
@@ -210,8 +211,8 @@ header a {
   display: block;
   list-style-type: none;
   margin: 0;
-  overflow: auto;
   padding: 0;
+  overflow: auto;
   text-align: center;
 }
 @media (min-width: 769px) {
