@@ -254,7 +254,7 @@ header a:hover {
   width: 100%;
 }
 @media (min-width: 769px) {
-  .landing-content-outer { padding-top: 100px; }
+  .landing-content-outer { padding-top: 50px; }
 }
 
 .landing-content-inner {
